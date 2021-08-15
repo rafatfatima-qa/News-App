@@ -1,0 +1,32 @@
+{
+  "name": "News-App",
+  "version": "1.0.0",
+  "homepage": "http://rafatfatima-qa.github.io/News-App",
+  "description": "A JavaScript project",
+  "main": "./dist/index.js",
+  "scripts": {
+    "start": "node ./node_modules/parcel-bundler/bin/cli serve ./src/index.html --port 8080",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "node ./node_modules/parcel-bundler/bin/cli build ./src/index.html --out-dir ./dist/",
+    "lint": "node ./node_modules/eslint/bin/eslint . --ext .js --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.24.0",
+    "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "-": "0.0.1",
+    "gh-pages": "^3.2.3",
+    "save-dev": "0.0.1-security"
+  }
+}
